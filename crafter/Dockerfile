@@ -2,7 +2,7 @@ FROM debian:jessie
 MAINTAINER Dcylabs <dcylabs@gmail.com>
 
 # Installing all build tools 
-RUN apt-get update && apt-get install -y golang ca-certificates
+RUN apt-get update && apt-get install -y golang git-core ca-certificates
 
 # Setting up environment 
 RUN mkdir -p /var/crafter
